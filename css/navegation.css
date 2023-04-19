@@ -1,0 +1,98 @@
+.pn-header {
+    width: 100%;
+    height: 55px;
+    background-color: var( --color-dark2);
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 3px;
+    z-index: 999;
+}
+
+.box-hd {
+    display: flex;
+    width: 14em;
+    height: 100%;
+    align-items: center;
+    float: right;
+}
+
+.box-hd a{
+    color: var(--blue); 
+    text-decoration: none;
+    padding: 0 1.3rem;
+    position: relative;
+}
+
+.box-hd a:hover{
+    opacity: 0.7;
+}
+
+.box-hd a span::after{ 
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: 25px;
+    margin-left: 1.3rem;
+    background: var(--white-500);  
+    margin-top: -0.1rem;
+}
+
+.container-list {
+    display: flex;
+    width: 33em;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    float: left;
+}
+.container-list .logo{
+    width: 8em;
+    position: relative;
+    z-index: 9999;
+    transform: translateY(12px);
+}
+.navlist a{
+    color: var(--white);
+    text-decoration: none;
+    list-style-type: none;
+    height: 100%;
+    font-size: 1.1em;
+}
+.navlist a:hover{
+    color: var(--primary-400);
+}
+.navlist li:hover {
+    background-color: var(--blue);
+}
+.navlist{
+    display: flex;
+    align-items: center;
+}
+.navlist li{
+    display: flex;
+    margin-left: 0.5em;
+    width: 7em;
+    height: 4em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 .9em .9em;
+}
+
+.hd-box {
+    width: 65%; 
+    height: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width: 65rem) {
+    .hd-box {
+      width: 100%;
+      margin: 1;
+    }
+    .hd-box .container-list img {
+        display: none;
+    }
+    .container-list{
+        display: block;
+        padding: 0 0.6em 0;
+    }
+}

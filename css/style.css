@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+:root {
+    --white: #ffffff;
+    --white-200: #f8f8f8;
+    --white-500: #e7e6e6;
+    --gray-900: #121214;
+    --gray-300: #444448;
+    --gray-100: #535355;
+
+    --blue: #3cc2f7;
+    --blue-two: #234cbe;
+
+    --green: #16b646;
+    --primary-400: #ffbc48;
+
+    --color-white: #fff;
+    --color-dark1: rgb(39, 39, 39);
+    --color-dark2: #2d2d2d;
+    --color-dark3: #414141;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #343434;
+    --color-white: #ffffff;
+    --primary-400: #ffbc48;
+
+    font-size: 89.7%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abel', sans-serif;
+}
+body {
+    background: var(--gray-900);
+    overflow-x: none;
+}
+
+.overview {
+    width: 100%;
+    height: 45em;
+    background: var(--gray-100);
+    
+    background-repeat: no-repeat;
+    z-index: 99;
+}
+
+.imgBarb img{
+    width: 100%;
+    height: 45em;
+    position: absolute;
+    z-index: 1;
+}
+#text {
+    width: 85%;
+    color: white;
+    margin: 0 auto;
+    z-index: 9999;
+    
+}
+
+#text h1 {
+    float: right;
+    padding: 2em 2em 0 0;
+    color: #eb0808;
+    font-size: 3em;
+    position: relative;
+    z-index: 999;
+}
+
