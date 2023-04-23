@@ -55,7 +55,7 @@
     text-decoration: none;
     list-style-type: none;
     height: 100%;
-    font-size: 1.1em;
+    font-size: 2ex;
 }
 .navlist a:hover{
     color: var(--primary-400);
@@ -69,7 +69,7 @@
 }
 .navlist li{
     display: flex;
-    margin-left: 0.5em;
+    
     width: 7em;
     height: 4em;
     justify-content: center;
