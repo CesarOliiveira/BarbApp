@@ -21,7 +21,7 @@
     --color-dark5: #343434;
     --color-white: #ffffff;
     --primary-400: #ffbc48;
-
+    --primary-gray:#
     font-size: 89.7%;
 }
 * {
@@ -36,11 +36,12 @@ body {
 }
 
 .overview {
-    width: 100%;
+    width: 100%; 
     height: 45em;
     background-image: linear-gradient(to right, black 40%, transparent 58%), url("../img/barbeiro.jpeg");
     background-repeat: no-repeat;
     background-position: right top;
+    border-bottom: solid 3px var(--color-dark3);
 }   
 
 .imgBarb img{
@@ -58,23 +59,24 @@ body {
 }
 
 #text h1 {
-    
     color: #eb0808;
     font-size: 3em;
-    position: relative;
+    position: auto;
     z-index: 999;
 }
 #text h2 {
     font-size: 3em;
+    
 }
 .info-box {
     width: 100%;
-    padding: 4em 1%;
+    padding: 2em 1%;
     
 }
 .textletr {
     width: 3em;
     height: 7em;
+    
 }
 .exp-info {
     width: 35%;
@@ -107,13 +109,27 @@ body {
     padding: .5em;
 }
 
+#main {
+    width: 82%;
+    height: 124em;
+    margin: 0 auto;
+    background: var(--color-dark4);
+}
+#main .container {
+    color: white;
+    width: 100%;
+    height: 4em;
+}
+
 @media (max-width: 75rem) {
     .download-options, .exp-info {
         margin: 0 auto;
     }
     .exp-info {
         text-align: center;
-        width: 85%;
+        width: 89%;
+        padding: 12px 1%;
+        margin-top: 5em;
     }
     .overview {
         background-image: linear-gradient(to top, black 60%, transparent 78%), url("../img/barbeiro.jpeg");
