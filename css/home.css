@@ -1,0 +1,223 @@
+.overview {
+    width: 100%; 
+    height: 45em;
+    background-image: linear-gradient(to right, black 40%, transparent 58%), url("../img/barbeiro.jpeg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    border-bottom: solid 3px var(--color-dark3);
+}   
+
+.imgBarb img{
+    width: 100%;
+    height: 45em;
+    position: absolute;
+    z-index: 1;
+    
+}
+#text {
+    width: 85%;
+    color: white;
+    margin: 0 auto;
+    z-index: 9999;
+}
+
+#text h1 {
+    color: #eb0808;
+    font-size: 3em;
+    position: auto;
+    z-index: 999;
+}
+#text h2 {
+    font-size: 3em;
+    
+}
+.info-box {
+    width: 100%;
+    padding: 2em 1%;
+    
+}
+.textletr {
+    width: 3em;
+    height: 7em;
+    
+}
+.exp-info {
+    width: 35%;
+    padding: 3em;
+}
+.exp-info p {
+    color: white;
+    width: 100%;
+    padding: .1em .5em  3em 1em;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+
+.download-options  {
+    width: 35%;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+}
+.download-options .googleplay, .download-options .appstore {
+    width: 10em;
+}
+.download-options .googleplay:hover, .download-options .appstore:hover {
+    transform: scale(1.2);
+}
+.download-options #or {
+    color: white;
+    font-size: 22px;
+    padding: .5em;
+}
+
+#main {
+    width: 82%;
+    height: 75em;
+    margin: 0 auto;
+    
+    padding: 23px 1%;
+}
+#main .container {
+    color: white;
+    width: 88%;
+    height: 20em;
+    background-image: linear-gradient(to left, black 50%, transparent 78%), url(../img/maps.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 1em;
+}
+
+#main .container .container-info{
+    width: 50%;
+    height: 100%;
+    padding: 1em 2%;
+    justify-content: flex-end;
+    float: right;
+    text-align: justify;
+}
+#main .container .container-info h1{
+    font-size: 1.3rem;
+}
+#main .container .container-info p{
+    padding: 1em 1%;
+    font-size: 2.5vmin;
+}
+
+
+  
+  
+  body * {
+    font-family: sans-serif;
+  }
+  
+  #main .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+    margin-top: 6em;
+    list-style: none;
+  }
+  
+  #main .cards:has(li:hover) li:not(:hover) {
+    opacity: .6;
+    scale: .98;
+  }
+  
+  #main .cards li {
+    flex: 1;
+    background-color: var(--gray-300);
+    padding: 2.8rem;
+    border-radius: .8rem;
+    color: white;
+    transition: all .2s;
+  }
+  
+  #main .cards li .header {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+  }
+  
+  #main .cards li i {
+    font-size: 2.4rem;
+  
+    background-color: var(--primary-400);
+    color: var(--gray-900);
+    border-radius: 50%;
+    padding: .4rem;
+  }
+  
+  #main .cards li h2 {
+    opacity: .9;
+  }
+  
+  #main .cards li p {
+    margin-top: 1.6rem;
+    opacity: .5;
+  }
+  
+  #main .cards li a {
+    display: inline-block;
+    color: white;
+    margin-top: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color .2s;
+  }
+  
+  #main .cards li a:hover {
+    color: var(--primary-200);
+  }
+  
+  footer {
+    width: 100%;
+    height: 7em;
+    background: var(--color-dark2);
+  }
+  .sobre {
+    padding: 3.5rem 1%;
+  }
+  .sobre h1{
+    color: var(--primary-400);
+  }
+  .sobre p{
+    color: white;
+    width: 65%;
+    text-align: justify;
+    padding: .5rem .5%;
+  }
+
+
+  @media (max-width: 46rem) {
+    #main .cards {
+      grid-template-columns: 1fr;
+    }
+  }
+
+@media (max-width: 75rem) {
+    .download-options, .exp-info {
+        margin: 0 auto;
+    }
+    .exp-info {
+        text-align: center;
+        width: 89%;
+        padding: 12px 1%;
+        margin-top: 5em;
+    }
+    .overview {
+        background-image: linear-gradient(to top, black 60%, transparent 78%), url("../img/barbeiro.jpeg");
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    .info-box{
+        padding: 32px 1%;
+    }
+    #main {
+        width: 100%;
+    }
+}
+
